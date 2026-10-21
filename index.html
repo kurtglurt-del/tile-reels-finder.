@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173d35">
+<title>Tile Reels Finder</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="logo">TF</div>
+  <div><h1>Tile Reels Finder</h1><p>Поиск видео о плиточных работах</p></div>
+</header>
+<main>
+  <section class="hero">
+    <span class="eyebrow">ПРОФЕССИОНАЛЬНЫЙ ПОИСК</span>
+    <h2>Находи идеи для укладки керамогранита</h2>
+    <p>Подборка запросов, поиск в доступных источниках и собственная библиотека ссылок на Reels.</p>
+  </section>
+
+  <section class="panel">
+    <label for="query">Что ищем?</label>
+    <input id="query" value="укладка керамогранита" placeholder="Например, запил под 45°">
+    <div class="grid">
+      <button class="topic" data-query="укладка керамогранита">Укладка керамогранита</button>
+      <button class="topic" data-query="large format porcelain tile installation">Крупный формат</button>
+      <button class="topic" data-query="tile miter 45">Запил под 45°</button>
+      <button class="topic" data-query="porcelain tile bathroom installation">Ванные комнаты</button>
+      <button class="topic" data-query="porcelain tile floor installation">Укладка пола</button>
+      <button class="topic" data-query="tile leveling system installation">Система выравнивания</button>
+    </div>
+    <div class="row">
+      <label for="source">Источник</label>
+      <select id="source">
+        <option value="instagram">Instagram — тематический поиск</option>
+        <option value="google">Google — поиск веб-страниц и видео</option>
+        <option value="youtube">YouTube — поиск видео</option>
+      </select>
+    </div>
+    <button id="search" class="primary">Искать</button>
+    <p class="hint">Открывается поиск во внешнем сервисе. Автоматический доступ ко всем Reels не гарантируется.</p>
+  </section>
+
+  <section class="panel">
+    <div class="section-title"><div><h2>Моя библиотека</h2><p>Сохраняй ссылки и заметки локально в этом браузере.</p></div><span id="count" class="count">0</span></div>
+    <label for="url">Ссылка на Reel или видео</label>
+    <input id="url" type="url" placeholder="https://www.instagram.com/reel/...">
+    <label for="note">Заметка / категория</label>
+    <input id="note" placeholder="Например, крупный формат, запил 45°">
+    <button id="save" class="primary">Сохранить ссылку</button>
+    <p id="status" role="status" class="hint"></p>
+    <div id="saved" class="saved"></div>
+  </section>
+  <section class="notice">
+    <strong>Что важно знать</strong>
+    <p>Это стартовая веб-версия. Она не обходит авторизацию и не скачивает видео. Поиск Instagram ограничен возможностями самого сервиса. Для расширенной автоматизации понадобится разрешённый источник данных или серверная интеграция с подходящим API.</p>
+  </section>
+</main>
+<footer>Tile Reels Finder · MVP 0.1</footer>
+<script src="app.js"></script>
+</body>
+</html>

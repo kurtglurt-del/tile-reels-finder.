@@ -1,0 +1,9 @@
+{
+  "name": "Tile Reels Finder",
+  "short_name": "Tile Finder",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f6f3",
+  "theme_color": "#173d35",
+  "description": "Поиск и сохранение ссылок на видео о плиточных работах"
+}
